@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
 
     margin: 0;
@@ -5,7 +7,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: Helvetica, 'Roboto', sans-serif;
 
     }
 
@@ -16,9 +18,14 @@
     flex-direction: column;
     min-height: 100vh;
     }
-   
+
+
     .wrapper {
         flex: 1;
+    }
+
+    img{
+        width: 100%;
     }
 
     /* Font */
@@ -30,32 +37,37 @@
 
     :root {
         --lightgreen: #BBD4B2;
+        --lightblue: #C0E2EE;
+        --barkblue: #3068AF;
         --curryyellow: #E3C521;
+        --brown-opacity: rgb(112,78,40,0.7);
         --white: #fff;
         --background: #F9F4E3;
         }
 
     /*********** Navigations bar ***********/
 
-   /* Navbaren */
-
-
-   .container {
-	position: relative;
-	margin-top: 100px;
-}
 .container img {
 	display: block;
 	width: 100%;
 }
+
+header {
+    position: sticky;
+    z-index: 100;
+}
+
+main{
+    margin-top: 100px;
+}
+
 nav {
 	position: fixed;
 	z-index: 10;
 	left: 0;
 	right: 0;
-	top: 0;
-	font-family: 'Montserrat', sans-serif;
-	padding: 0 5%;
+	top: 0px;
+	padding: 0 4px 0 5%;
 	height: 100px;
 	background-color: var(--lightgreen);
 }
@@ -65,10 +77,20 @@ nav .logo {
 	height: 100%;
 	display: flex;
 	align-items: center;
-	font-size: 24px;
+	font-size: 35px;
 	color: #000000;
     font-family: brush;
 }
+
+.hamburger-cart-container-2{
+    display: none;
+    font-size: 25px;
+}
+
+.hamburger-cart-container-2 i {
+    color: #000000;
+}
+
 nav .links {
 	float: right;
 	padding: 0;
@@ -84,12 +106,20 @@ nav .links li {
 }
 nav .links a {
 	display: block;
-	padding: 1em;
+	padding: 10px;
 	font-size: 16px;
 	font-weight: bold;
 	color: #000000;
 	text-decoration: none;
+
+    
 }
+ 
+nav .links a:hover {
+	background-color: #849f7a;
+    border-radius: 5px;   
+}
+
 #nav-toggle {
 	position: absolute;
 	top: -100px;
@@ -110,11 +140,364 @@ nav .icon-burger .line {
 	transition: all .3s ease-in-out;
 }
 
-/* Footer */
+/************** Knapper *************/
+
+.butten-container{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.my-button {
+    background-color: var(--barkblue);
+    color:black; /* Tekstfarve */
+    font-family: brush;
+    padding: 10px 20px; /* Polstring (juster størrelsen) */
+    border: none; /* Ingen kantlinje */
+    border-radius: 5px; /* Afrundede hjørner */
+    cursor: pointer; /* Pegefingerkursør ved hover */
+    text-align: left;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.my-button:hover {
+    background-color: #244e85; /* Ændrer baggrundsfarve ved hover */
+}
+
+.lig-i-kurv{
+    display: flex;
+    gap: 20px;
+    padding: 30px 0;
+}
+
+.plus-button{
+    background-color: var(--barkblue);
+    color:black; /* Tekstfarve */
+    font-family: brush;
+    padding: 10px 20px; /* Polstring (juster størrelsen) */
+    border: none; /* Ingen kantlinje */
+    border-radius: 5px; /* Afrundede hjørner */
+    cursor: pointer; /* Pegefingerkursør ved hover */
+    text-align: left;
+    text-decoration: none;
+    color: #fff;
+}
+
+/**************** forsiden *****************/
+
+h2{
+    font-family: brush;
+    display: flex;
+    justify-content: center;
+}
+
+.indhold{
+    padding: 10%;
+}
+
+/* Bølger */
+
+.bue{
+    display: none;
+}
+
+.bolge {
+    display: none;
+}
+
+.bundbolge{
+    position: absolute;
+    bottom: 0;
+}
+
+/* Om TrøjborBryg */
+
+.om-artikel {
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  .om-artikel img {vertical-align: middle;}
+  
+  .om-artikel .om-section {
+    display: grid;
+    align-content: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    background: var(--brown-opacity);
+    color: #f1f1f1;
+    width: 50%;
+    padding: 100px;
+  }
+
+  .om-artikel .om-section h2, .om-arktiviteter .arktiviteter h2{
+    font-size: 2.5rem;
+    padding: 10px 0;
+  }
+
+  .om-artikel .om-section p, .om-arktiviteter .arktiviteter p{
+    font-size: 1.5rem;
+    padding: 20px 0;
+  }
+
+/* Øl udvalg */
+.ol-artikel{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    padding: 50px 30px;
+}
+
+.over {
+    position: relative;
+}
+
+/* Arktiviteter */
+
+.arktiviteter{
+    padding: 20px 30%;
+}
+
+.om-arktiviteter {
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  .om-arktiviteter img {vertical-align: middle;}
+  
+  .om-arktiviteter .arktiviteter {
+    display: grid;
+    align-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    background: var(--brown-opacity);
+    color: #f1f1f1;
+    width: 50%;
+    padding: 100px;
+  }
+
+
+/************ Vores øl side ************/
+
+h1{
+    font-family: brush;
+    font-size: 2.5rem;
+}
+
+h4{
+    font-family: brush;
+    font-size: 2.5rem;
+    text-align: left;
+}
+
+.overskrift{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px 40px 50px;
+}
+
+.overskrift i{
+    font-size: 25px;
+}
+
+.ol{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 50px;
+    padding: 20px 20px;
+}
+
+/* Øl sider */
+
+.info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10%;
+    padding: 50px;
+}
+
+
+/******* Øl pakker ******/
+
+.ol-pakker{
+    display: grid;
+    grid-template-columns: 420px 420px;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 30px;
+    gap: 40px;
+    justify-content: center;
+    align-content: center;
+}
+
+.figure-1{
+    display: none;
+}
+
+.ol-info{
+    display: grid;
+    align-items: center;
+    align-content: center;
+    font-size: 1.1rem;
+}
+
+.indeholder{
+    padding: 20px 0;
+}
+
+/* Personlig */
+
+.banner-wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1.6rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    min-height: 100vh;
+}
+
+.banner-content{
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    justify-content: center;
+}
+
+.banner-left span{
+    display: block;
+    font-size: 4.4rem;
+}
+
+.banner-left button{
+    background: #222;
+    border: none;
+    color: #fff;
+    font-size: 1.1rem;
+    font-family: inherit;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0.65rem 2rem;
+    border: 3px solid #222;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+.banner-left button:hover{
+    background: #fff;
+    color: #222;
+    border-color: #222;
+}
+.banner-left button:focus{
+    outline: 0;
+}
+.color-content{
+    margin-top: 3.2rem;
+}
+
+.color{
+    width: 35px;
+    height: 35px;
+    background: none;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: 12px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+.color-lyseroed{
+    background-color: #F27980;
+}
+.color-gul{
+    background-color: #E2C422;
+}
+.color-groen{
+    background-color: #385326;
+}
+.color-bla{
+    background-color: #3068AF;
+}
+
+.color:hover{
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+}
+.active-color{
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+}
+.color-groups{
+    padding: 1rem 0;
+    display: flex;
+}
+
+/*********** Om os ***********/
+.vores-bryghus-svg{
+    display: none;
+}
+
+.vores-bryghus-computer-svg{
+    padding: 0 150px;
+    margin-top: 50px;
+
+}
+
+/* Hendvisninger */
+
+.hendvisniger {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--lightgreen);
+    gap: 20%;
+    padding: 50px 100px 70px 100px;
+    margin-top: -5px;
+}
+
+.hendvisniger section {
+    position: relative;
+}
+
+.hendvisniger img {
+    width: 100%; /* Gør billedet fuld bredde inden for sin container */
+    display: block;
+    
+}
+
+.hendvisniger h3 {
+    position: absolute;
+    top: 50%; /* Placerer teksten i midten vertikalt */
+    left: 50%; /* Placerer teksten i midten horisontalt */
+    transform: translate(-50%, -50%); /* Justerer positionen for at være i midten af billedet */
+    color: white; /* Ændrer tekstfarven efter behov */
+    z-index: 1; /* Sørger for, at teksten er over billedet */
+    font-family: brush;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/***************** Footer ****************/
 
 footer{
     background-color: var(--lightgreen);
-    margin-top: auto;
+    margin-top: -4px;
 }
 
 .footer {
@@ -154,12 +537,23 @@ footer{
 
 /*************** media **********'*/
 
+/* ipad */
+
 @media screen and (max-width: 915px) {
 	nav .logo {
 		float: none;
 		width: auto;
 
 	}
+
+    .hamburger-cart-container{
+        display: none;
+    }
+
+    .hamburger-cart-container-2{
+        display: block;
+    }
+
 	nav .links {
 		float: none;
 		position: fixed;
@@ -185,6 +579,9 @@ footer{
 	}
 	nav .icon-burger {
 		display: block;
+        display: flex;
+        gap: 10px;
+        align-items: center;
 	}
 	nav :checked ~ .icon-burger .line:nth-child(1) {
 		transform: translateY(10px) rotate(225deg);
@@ -195,7 +592,89 @@ footer{
 	nav :checked ~ .icon-burger .line:nth-child(2) {
 		opacity: 0;
 	}
-	
+
+    /* Forside */
+
+    .bue{
+        display: block;
+    }
+    
+    .bolge {
+        display: block;
+        position: relative;
+        z-index: 100;
+    }
+
+    /* Om Trøjborgbryg */
+
+      .om-artikel .om-section {
+        position: relative;
+        background: var(--background);
+        color: black;
+        width: 100%;
+        padding: 40px 4rem;
+      }
+
+    /* Om øl */
+
+    .ol-artikel{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        background: var(--lightgreen);
+        padding: 30px;
+    }
+
+    /* Øl udvalg */
+    .ol{
+        display: grid; 
+        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Rundvisninger */
+    .om-arktiviteter .arktiviteter {
+        position: relative;
+        background: var(--background);
+        color: black;
+        width: 100%;
+        padding: 40px 4rem;
+      }
+
+    
+    .bolge{
+        position: absolute;
+        top: 0;
+    }
+
+    /**** Øl pakker ****/
+    .ol-pakker{
+        display: grid;
+        grid-template-columns: 300px;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .figure-1{
+        display: block;
+    }
+    
+    .figure-2{
+        display: none;
+    }
+
+    /*********** Om os ***********/
+.vores-bryghus-svg{
+    display: block;
+    padding: 0 5%;
+}
+
+.vores-bryghus-computer-svg{
+    display: none;
+}
+    
+
+    /* footer */
+
     .footer {
         position: relative;
         display: grid; 
@@ -203,10 +682,59 @@ footer{
         grid-template-rows: 1fr 1fr;
         gap: 15%;
         justify-items: center;
+        padding: 10px 0;
 }
 }
 
+/* Mobil */
+
 @media screen and (max-width: 480px) {
+
+    .ol-artikel{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .ol{
+        display: grid; 
+        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Øl sider */
+
+.info{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 4%;
+}
+
+/* Øl pakker */
+
+.ol-pakker{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.ol-info{
+    display: grid;
+    align-items: flex-start;
+    align-content: start;
+    font-size: 1.1rem;
+}
+
+.figure-1{
+    display: block;
+}
+
+.figure-2{
+    display: none;
+}
+
+    /* Footer */
 
     .footer {
         position: relative;
