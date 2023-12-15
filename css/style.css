@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&family=Roboto:wght@100&display=swap');
 
 * {
 
@@ -152,7 +153,7 @@ nav .icon-burger .line {
 .my-button {
     background-color: var(--barkblue);
     color:black; /* Tekstfarve */
-    font-family: brush;
+    font-family: 'Bebas Neue', sans-serif;
     padding: 10px 20px; /* Polstring (juster størrelsen) */
     border: none; /* Ingen kantlinje */
     border-radius: 5px; /* Afrundede hjørner */
@@ -160,7 +161,7 @@ nav .icon-burger .line {
     text-align: left;
     text-decoration: none;
     color: #fff;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .my-button:hover {
@@ -189,12 +190,14 @@ nav .icon-burger .line {
 /**************** forsiden *****************/
 
 h2{
-    font-family: brush;
+    font-family: 'Bebas Neue', sans-serif;
     display: flex;
     justify-content: center;
 }
 
 .indhold{
+    display: grid;
+    align-content: center;
     padding: 10%;
 }
 
@@ -243,6 +246,7 @@ h2{
   .om-artikel .om-section p, .om-arktiviteter .arktiviteter p{
     font-size: 1.5rem;
     padding: 20px 0;
+    line-height: 40px;
   }
 
 /* Øl udvalg */
@@ -250,8 +254,10 @@ h2{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
-    padding: 50px 30px;
+    padding: 70px 50px;
+    gap: 10px;
 }
+
 
 .over {
     position: relative;
@@ -292,7 +298,7 @@ h1{
 }
 
 h4{
-    font-family: brush;
+    font-family: 'Bebas Neue', sans-serif;
     font-size: 2.5rem;
     text-align: left;
 }
@@ -647,6 +653,18 @@ footer{
         top: 0;
     }
 
+    /* Hendvisninger */
+
+    .hendvisniger {
+        gap: 13%;
+        padding: 50px 50px 70px 50px;
+    }
+    
+   
+    .hendvisniger h3 {
+        font-size: 1.5rem;
+    }
+
     /**** Øl pakker ****/
     .ol-pakker{
         display: grid;
@@ -689,6 +707,20 @@ footer{
 /* Mobil */
 
 @media screen and (max-width: 480px) {
+
+ /* Hendvisninger */
+
+ .hendvisniger {
+    gap: 7%;
+    padding: 50px 25px 70px 25px;
+}
+
+
+.hendvisniger h3 {
+    font-size: 1rem;
+}
+
+/* Forside */
 
     .ol-artikel{
         display: grid;

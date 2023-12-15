@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /annas-madunivers *
+Disallow: /hjerterum *
+Disallow: /trojborgbryg *
+
+Allow: /public_html
+
+Sitemap: 
