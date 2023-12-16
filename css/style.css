@@ -12,6 +12,10 @@
 
     }
 
+    .favicon{
+        size: 5px 5px;
+    }
+
     body {
     background: #F9F4E3;
     height: 100vh;
@@ -133,6 +137,7 @@ nav .icon-burger {
 	transform: translateY(-50%);
 }
 nav .icon-burger .line {
+    display: block;
 	width: 30px;
 	height: 5px;
 	background-color: #000000;
@@ -152,7 +157,6 @@ nav .icon-burger .line {
 
 .my-button {
     background-color: var(--barkblue);
-    color:black; /* Tekstfarve */
     font-family: 'Bebas Neue', sans-serif;
     padding: 10px 20px; /* Polstring (juster størrelsen) */
     border: none; /* Ingen kantlinje */
@@ -187,18 +191,60 @@ nav .icon-burger .line {
     color: #fff;
 }
 
+.tilbage-knap {
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    padding: 10px;
+    background-color: var(--barkblue);
+    font-family: 'Bebas Neue', sans-serif;
+    border: none; /* Ingen kantlinje */
+    border-radius: 5px; /* Afrundede hjørner */
+    cursor: pointer; /* Pegefingerkursør ved hover */
+    text-align: left;
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+}
+
+.tilbage-knap:hover{
+    background-color: #244e85; 
+}
+
 /**************** forsiden *****************/
+
+h1{
+    font-family: brush;
+    font-size: 2.5rem;
+}
 
 h2{
     font-family: 'Bebas Neue', sans-serif;
     display: flex;
     justify-content: center;
+    padding: 5px;
+}
+
+h4{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    text-align: left;
 }
 
 .indhold{
     display: grid;
     align-content: center;
-    padding: 10%;
+    font-size: 1.5rem;
+    padding-right: 30px;
+}
+
+.smagskasse{
+    padding-left: 50px;
+}
+
+.indhold-1{
+    padding-left: -20px;
+    padding-right: 50px;
 }
 
 /* Bølger */
@@ -254,7 +300,8 @@ h2{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
-    padding: 70px 50px;
+    align-items: center;
+    padding: 70px 20px;
     gap: 10px;
 }
 
@@ -292,16 +339,6 @@ h2{
 
 /************ Vores øl side ************/
 
-h1{
-    font-family: brush;
-    font-size: 2.5rem;
-}
-
-h4{
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 2.5rem;
-    text-align: left;
-}
 
 .overskrift{
     display: flex;
@@ -325,11 +362,34 @@ h4{
 
 .info{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 10%;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 400px 400px;
+    gap: 5%;
     padding: 50px;
+    justify-content: center;
 }
+
+.ol-billede img{
+ width: 90%;
+}
+
+.ol-billede{
+    justify-content: center;
+}
+
+.info-svg img{
+    width: 100%;
+}
+
+.mad img{
+    width: 70%;
+}
+
+.mad-1 h2{
+    text-align: center;
+}
+
+
 
 
 /******* Øl pakker ******/
@@ -541,7 +601,57 @@ footer{
     padding: 30px;
    }
 
-/*************** media **********'*/
+/*************** media ************/
+
+/* Computer */
+
+@media screen and (max-width: 1399px)
+{
+    .om-artikel .om-section {
+        padding: 50px;
+    }
+
+    .om-artikel .om-section p, .om-arktiviteter .arktiviteter p {
+        font-size: 1.2rem;
+        padding: 20px 0;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 1100px)
+{
+
+    .om-artikel .om-section p, .om-arktiviteter .arktiviteter p {
+        font-size: 1rem;
+        padding: 0;
+        line-height: 30px;
+    }
+
+    .my-button {
+        padding: 9px 20px;
+        font-size: 25px;
+    }
+
+    /* Om øl */
+
+    .ol-artikel{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 30px;
+    }
+
+    
+    .smagskasse{
+        padding: 0 50px;
+    }
+    
+    .indhold{
+        padding-left: -20px;
+        padding-right: 50px;
+    }
+
+}
 
 /* ipad */
 
@@ -601,6 +711,16 @@ footer{
 
     /* Forside */
 
+    #responsive-image-1 {
+        /* Ændr billedet til det mobile billede */
+        content: url('../img/banner/lokale-banner-mobil.webp');
+    }
+
+    #responsive-image-2 {
+        /* Ændr billedet til det mobile billede */
+        content: url('../img/banner/bar-banner-mobil.webp');
+    }
+
     .bue{
         display: block;
     }
@@ -618,7 +738,7 @@ footer{
         background: var(--background);
         color: black;
         width: 100%;
-        padding: 40px 4rem;
+        padding: 40px 20%;
       }
 
     /* Om øl */
@@ -628,7 +748,11 @@ footer{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         background: var(--lightgreen);
-        padding: 30px;
+        padding: 0 30px;
+    }
+
+    .ol-artikel p{
+        font-size: 1.3rem;
     }
 
     /* Øl udvalg */
@@ -644,7 +768,7 @@ footer{
         background: var(--background);
         color: black;
         width: 100%;
-        padding: 40px 4rem;
+        padding: 40px 20%;
       }
 
     
@@ -704,6 +828,41 @@ footer{
 }
 }
 
+@media screen and (max-width: 740px) {
+    .ol-artikel{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 400px 300px 300px;
+        justify-content: center;
+        align-content: center;
+        padding: 0 20%;
+    }
+
+
+
+    .indhold{
+        padding: 0;
+    }
+
+    .ol-artikel img{
+        width: 100%;
+    }
+
+
+   
+
+    .ol-artikel .figure-1, .ol-artikel .figure-2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .ol{
+        display: grid; 
+        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 /* Mobil */
 
 @media screen and (max-width: 480px) {
@@ -725,13 +884,30 @@ footer{
     .ol-artikel{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 200px 300px 200px 200px;
     }
 
     .ol{
         display: grid; 
         grid-template-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+    }
+
+    .ol-artikel{
+        padding: 10%;
+        font-size: 1.1rem;
+    }
+
+    .ol-artikel p{
+        font-size: 1rem;
+    }
+
+    .om-artikel .om-section {
+        padding: 61px 10%;
+    }
+
+    .om-arktiviteter .arktiviteter {
+        padding: 40px 10%;
     }
 
     /* Øl sider */

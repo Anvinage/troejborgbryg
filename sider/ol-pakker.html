@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TrøjborgBryg</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/style.css">
-</head>
+    <head>
+        <!-- SEO -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="trojborgbryg">
+        <meta property="og:site_name" content="trojborgbryg">
+        <meta property="og:description" content="TrøjborgBryg - alkoholfri øl">
+        <meta name="description" content="TrøjborgBryg - alkoholfri øl">
+        <meta name="keywords" content="trøjborgbryg, øl, alkoholfri, bryghus, microbryggeri, aarhus, smag, frisk, pakker, arrengementer,">
+        <meta name="author" content="Anna Vinge">
+        <meta name="geo.placename" content="Aarhus">
+        <meta property="og:url" content="https://trojborgbryg.annavinge.dk/">
+        <meta property="og:locale" content="da_dk">
+        <meta name="format-detection" content="telephone=no">
+        <!-- SEO slut -->
+    
+        <title>TrøjborgBryg</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        
+        <!--Favicon-->
+        <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+        
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="../css/style.css">
+    
+    </head>
 <body>
     <header>
         <nav>
@@ -19,21 +39,21 @@
                 <li><a href="#arrengementer">Arrengementer</a></li>
                 <li><a href="#alkoholfri">Alkoholfri</a></li>
                 <li><a href="../sider/om-os.html">Om os</a></li>
-                <div class="hamburger-cart-container">
+                <li class="hamburger-cart-container">
                     <div class="cart-container">
                         <a href="../sider/kurv.html"><i class="fa-solid fa-cart-shopping"></i></a>
                     </div>
-                </div>
+                </li>
             </ul>
     
             <div class="icon-burger">
                 <div>
                     <a href="../sider/kurv.html" class="hamburger-cart-container-2"><i class="fa-solid fa-cart-shopping"></i></a>
                 </div>
-                <label for="nav-toggle">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
+                <label for="nav-toggle" aria-label="burger-menu">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
                 </label>
             </div>
                 
@@ -42,9 +62,15 @@
 
     <main>
 
-    <article class="ol-pakker">
+        <article class="overskrift">
+            <i class="fa-solid fa-filter"></i>
+            <h1>Øl pakker</h1>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </article>
+
+    <div class="ol-pakker">
         <figure>
-            <img src="../img/ol/rabarber-frugtol.png" alt="" width="100%">
+            <img src="../img/ol/rabarber-frugtol.png" alt="">
         </figure>
         <section class="ol-info">
             <h4>Advents kalenderen</h4>
@@ -59,7 +85,7 @@
             </div>
         </section>
         <figure class="figure-1">
-            <img src="../img/ol/rabarber-frugtol.png" alt="" width="100%">
+            <img src="../img/ol/smagskasse.webp" alt="">
         </figure>
         <section class="ol-info">
             <h4>Smagskassen</h4>
@@ -74,11 +100,11 @@
             </div>
         </section>
         <figure class="figure-2">
-            <img src="../img/ol/rabarber-frugtol.png" alt="" width="100%">
+            <img src="../img/ol/smagskasse.webp" alt="" >
         </figure>
         <!-- banner left -->
         <div class = "banner-right">
-            <img src = "../img/personlig/personlig-lyseroed.png">
+            <img src = "../img/personlig/personlig-lyseroed.png" alt="">
           </div>
         <section class="ol-info">
             <div class = "banner-content">
@@ -110,9 +136,28 @@
       
               </div>
           
-          <script src="../script.js"></script>
+          <script src="../java/script.js"></script>
         </section>
-    </article>
+    </div>
+
+    <figure>
+        <img src="../img/baggrund/baggrund-3.svg" alt="">
+    </figure>
+
+    <div class="hendvisniger">
+        <section>
+            <a href="#arrengementer"><img src="../img/henvisninger/bryghus-banner.webp" alt=""></a>
+            <h3>Rundvisninger</h3>
+        </section>
+        <section>
+            <a href="#arrengementer"><img src="../img/henvisninger/ol-smagning.webp" alt=""></a>
+            <h3>Jule ølsmagniger</h3>
+        </section>
+        <section>
+            <a href="#arrengementer"><img src="../img/henvisninger/rundvisning.webp" alt=""></a>
+            <h3>Rundvisninger</h3>
+        </section>
+    </div>  
 
 </main>
 

@@ -5,4 +5,4 @@ Disallow: /trojborgbryg *
 
 Allow: /public_html
 
-Sitemap: 
+Sitemap: https://https//trojborgbryg.annavinge.dk/sitemap.xml

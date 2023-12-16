@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TrøjborgBryg</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/style.css">
-</head>
+    <head>
+        <!-- SEO -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="trojborgbryg">
+        <meta property="og:site_name" content="trojborgbryg">
+        <meta property="og:description" content="TrøjborgBryg - alkoholfri øl">
+        <meta name="description" content="TrøjborgBryg - alkoholfri øl">
+        <meta name="keywords" content="trøjborgbryg, øl, alkoholfri, bryghus, microbryggeri, aarhus, smag, frisk, pakker, arrengementer,">
+        <meta name="author" content="Anna Vinge">
+        <meta name="geo.placename" content="Aarhus">
+        <meta property="og:url" content="https://trojborgbryg.annavinge.dk/">
+        <meta property="og:locale" content="da_dk">
+        <meta name="format-detection" content="telephone=no">
+        <!-- SEO slut -->
+    
+        <title>TrøjborgBryg</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        
+        <!--Favicon-->
+        <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+        
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="../css/style.css">
+    
+    </head>
 <body>
     <header>
         <nav>
@@ -19,21 +39,21 @@
                 <li><a href="#arrengementer">Arrengementer</a></li>
                 <li><a href="#alkoholfri">Alkoholfri</a></li>
                 <li><a href="../sider/om-os.html">Om os</a></li>
-                <div class="hamburger-cart-container">
+                <li class="hamburger-cart-container">
                     <div class="cart-container">
                         <a href="../sider/kurv.html"><i class="fa-solid fa-cart-shopping"></i></a>
                     </div>
-                </div>
+                </li>
             </ul>
     
             <div class="icon-burger">
                 <div>
                     <a href="../sider/kurv.html" class="hamburger-cart-container-2"><i class="fa-solid fa-cart-shopping"></i></a>
                 </div>
-                <label for="nav-toggle">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
+                <label for="nav-toggle" aria-label="burger-menu">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
                 </label>
             </div>
                 
@@ -41,9 +61,12 @@
     </header>
 
 <main>
-    <article class="info">
-        <figure>
-            <img src="../img/ol/rabarber-frugtol.png" alt="" width="100%">
+
+    <a href="../sider/vores-ol.html" class="tilbage-knap"> ← Tilbage til udvalg</a>
+
+    <div class="info">
+        <figure class="ol-billede">
+            <img src="../img/ol/rabarber-frugtol.png"  alt="">
         </figure>
         <section>
             <h1>Rabarber frugtøl</h1>
@@ -55,21 +78,21 @@
                 <a href="#" class="my-button">Tilføj til kurv</a>
             </div>
         </section>
-        <figure>
-            <img src="../img/info/rababer-info.svg" alt="" width="100%">
+        <figure class="info-svg">
+            <img src="../img/info/rababer-info.svg"  alt="">
         </figure>
-        <section>
+        <section class="mad-1">
             <h2>Går godt til</h2>
             <figure class="mad">
-                <img src="../img/mad/salat.png" alt="" width="100%">
-                <img src="../img/mad/fisk.png" alt="" width="100%">
+                <img src="../img/mad/salat.png" alt="">
+                <img src="../img/mad/fisk.png" alt="">
             </figure>
         </section>
-    </article>
+    </div>
 
-    <section>
+    <figure>
         <img src="../img/baggrund/baggrund-3.svg" alt="">
-    </section>
+    </figure>
 
 </main>
 
