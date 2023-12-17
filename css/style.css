@@ -373,10 +373,11 @@ h4{
 }
 
 .ol-billede img{
- width: 90%;
+ width: 100%;
 }
 
 .ol-billede{
+    width: 85%;
     justify-content: center;
 }
 
@@ -384,8 +385,12 @@ h4{
     width: 100%;
 }
 
+.mad {
+    width: 65%;
+}
+
 .mad img{
-    width: 70%;
+    width: 100%;
 }
 
 .mad-1 h2{
@@ -394,6 +399,8 @@ h4{
 
 .mad-1{
     display: grid;
+    grid-template-columns: 320px;
+    grid-template-rows: 45px 145px;
     justify-content: center;
     justify-items: center;
 }
@@ -956,6 +963,7 @@ footer{
 
 .mad img{
     justify-items: center;
+
 }
 
 /* Øl pakker */
