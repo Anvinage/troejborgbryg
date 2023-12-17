@@ -214,8 +214,10 @@ nav .icon-burger .line {
 /**************** forsiden *****************/
 
 h1{
-    font-family: brush;
+    font-family:'Bebas Neue';
     font-size: 2.5rem;
+    text-align: center;
+    padding: 30px;
 }
 
 h2{
@@ -362,11 +364,12 @@ h4{
 
 .info{
     display: grid;
-    grid-template-columns: 300px 300px;
-    grid-template-rows: 400px 400px;
+    grid-template-columns: 320px 320px;
+    grid-template-rows: 420px 420px;
     gap: 5%;
-    padding: 50px;
+    padding: 80px 50px;
     justify-content: center;
+    justify-items: center;
 }
 
 .ol-billede img{
@@ -389,6 +392,11 @@ h4{
     text-align: center;
 }
 
+.mad-1{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
 
 
 
@@ -397,7 +405,7 @@ h4{
 .ol-pakker{
     display: grid;
     grid-template-columns: 420px 420px;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 460px 415px 570px;
     padding: 30px;
     gap: 40px;
     justify-content: center;
@@ -709,7 +717,7 @@ footer{
 		opacity: 0;
 	}
 
-    /* Forside */
+    /* Billeder */
 
     #responsive-image-1 {
         /* Ændr billedet til det mobile billede */
@@ -720,6 +728,27 @@ footer{
         /* Ændr billedet til det mobile billede */
         content: url('../img/banner/bar-banner-mobil.webp');
     }
+
+    #responsive-image-3 {
+        /* Ændr billedet til det mobile billede */
+        content: url('../img/henvisninger/bar-mobil.webp');
+    }
+    #responsive-image-4 {
+        /* Ændr billedet til det mobile billede */
+        content: url('../img/henvisninger/ol-smagning-mobil.webp');
+    }
+    #responsive-image-5 {
+        /* Ændr billedet til det mobile billede */
+        content: url('../img/henvisninger/rundvisning-mobil.webp');
+    }
+
+    /* knap */
+
+    .tilbage-knap{
+        font-size: 15px;
+    }
+
+    /* Forside */
 
     .bue{
         display: block;
@@ -793,7 +822,11 @@ footer{
     .ol-pakker{
         display: grid;
         grid-template-columns: 300px;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 250px 420px 210px 420px 365px;
+    }
+
+    .banner-right img{
+        width: 90%;
     }
 
     .figure-1{
@@ -915,16 +948,21 @@ footer{
 .info{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 360px 330px 360px 470px;
     gap: 4%;
+    justify-content: center;
+    justify-items: center;
+}
+
+.mad img{
+    justify-items: center;
 }
 
 /* Øl pakker */
-
 .ol-pakker{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 300px;
+    grid-template-rows: 420px 330px 300px 320px 390px;
 }
 
 .ol-info{
