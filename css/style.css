@@ -176,7 +176,7 @@ nav .icon-burger .line {
 .plus-button{
     background-color: var(--barkblue);
     color:black; /* Tekstfarve */
-    font-family: "Georgia Brush";
+    font-family: 'Bebas Neue', sans-serif;
     padding: 10px 20px; /* Polstring (juster størrelsen) */
     border: none; /* Ingen kantlinje */
     border-radius: 5px; /* Afrundede hjørner */
@@ -565,7 +565,7 @@ h4{
     transform: translate(-50%, -50%); /* Justerer positionen for at være i midten af billedet */
     color: white; /* Ændrer tekstfarven efter behov */
     z-index: 1; /* Sørger for, at teksten er over billedet */
-    font-family: "Georgia Brush";
+    font-family: 'Bebas Neue', sans-serif;
     font-size: 2rem;
     text-align: center;
 }
