@@ -65,9 +65,15 @@
 <!-- Om Trøjborg Sektion stater -->
 
     <div class="om-artikel">
-        <figure>
+        <!-- <figure>
             <img id="responsive-image-1" src="img/banner/lokale-banner.webp" alt="bryghus lokale">
-        </figure>
+        </figure> -->
+
+        <picture>
+            <source class="" media="(min-width: 480px)" srcset="img/banner/lokale-banner.webp">
+            <source class="" media="(max-width: 480px)" srcset="img/banner/lokale-banner-mobil.webp">
+            <img src="img/baggrund/png/gul-flaske-forside-laptop.png" alt="">
+        </picture>
 
         <section class="om-section">
             <h1>Om TrøjborgBryg</h1>
@@ -118,9 +124,18 @@
 <div class="om-arktiviteter">
     <img src="img/baggrund/baggrund-1.svg" alt="boelge" class="bolge">
 
-    <figure class="over">
+
+    <picture>
+        <source class="" media="(min-width: 480px)" srcset="img/banner/bar-banner-2.webp">
+        <source class="" media="(max-width: 480px)" srcset="img/banner/bar-banner-mobil.webp">
+        <img src="img/baggrund/png/gul-flaske-forside-laptop.png" alt="">
+    </picture>
+
+    <!-- <figure class="over">
         <img id="responsive-image-2" src="img/banner/bar-banner-2.webp" alt="" class="bryghus-banner">
-    </figure>
+    </figure> -->
+
+    
     
     <section class="arktiviteter">
         <h2>arrangementer</h2>
