@@ -1,6 +1,7 @@
+/* Font */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&family=Roboto:wght@100&display=swap');
-@import url('https://db.onlinewebfonts.com/c/0b6748f0722f3e308263bebdd50fe400?family=Georgia+Brush');
 
 * {
 
@@ -31,9 +32,6 @@
         width: 100%;
     }
 
-    /* Font */
-
-    /*  */
 
     :root {
         --lightgreen: #BBD4B2;
@@ -73,13 +71,15 @@ nav {
 }
 nav .logo {
 	float: left;
-	width: 40%;
-	height: 100%;
+	width: 240px;
 	display: flex;
 	align-items: center;
-	font-size: 35px;
-	color: #000000;
-    font-family: "Georgia Brush";
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
 }
 
 .hamburger-cart-container-2{
@@ -402,7 +402,6 @@ h4{
 }
 
 
-
 /******* Øl pakker ******/
 
 .ol-pakker{
@@ -618,6 +617,10 @@ footer{
 
 @media screen and (max-width: 1399px)
 {
+    nav .logo {
+        width: 200px;  
+    }
+
     .om-artikel .om-section {
         padding: 50px;
     }
@@ -666,11 +669,6 @@ footer{
 /* ipad */
 
 @media screen and (max-width: 915px) {
-	nav .logo {
-		float: none;
-		width: auto;
-
-	}
 
     .hamburger-cart-container{
         display: none;
@@ -721,27 +719,18 @@ footer{
 
     /* Billeder */
 
-    #responsive-image-1 {
-        /* Ændr billedet til det mobile billede */
-        content: url('../img/banner/lokale-banner-mobil.webp');
-    }
-
-    #responsive-image-2 {
-        /* Ændr billedet til det mobile billede */
-        content: url('../img/banner/bar-banner-mobil.webp');
-    }
 
     #responsive-image-3 {
         /* Ændr billedet til det mobile billede */
-        content: url('../img/henvisninger/bar-mobil.webp');
+        content: url('../img/henvisninger/bar-1.webp');
     }
     #responsive-image-4 {
         /* Ændr billedet til det mobile billede */
-        content: url('../img/henvisninger/ol-smagning-mobil.webp');
+        content: url('../img/henvisninger/ol-smagning-1.webp');
     }
     #responsive-image-5 {
         /* Ændr billedet til det mobile billede */
-        content: url('../img/henvisninger/rundvisning-mobil.webp');
+        content: url('../img/henvisninger/rundvisning-1.webp');
     }
 
     /* knap */
@@ -923,13 +912,6 @@ footer{
         text-align: left;
     }
 
-    .mad {
-        width: 55%;
-    }
-
-    .mad-1 {
-        grid-template-rows: 49px 120px;
-    }
     
 }
 
@@ -941,17 +923,34 @@ footer{
     .info{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 595px 265px 360px 420px;
+        grid-template-rows: 595px 265px 360px 530px;
         gap: 4%;
         padding: 80px 50px;
         justify-content: center;
         justify-items: center;
     }
     
-    .mad img{
-        justify-items: center;
-    
+    .mad-1 {
+        text-align: center; /* Justér dette efter dine præferencer */
+        grid-template-columns: 320px;
+        grid-template-rows: 45px 175px;
     }
+
+    .mad-1 h2{
+        font-size: 30px;
+    }
+
+    
+    .mad {
+        /* Stil dine billeder efter behov, for eksempel maksimal bredde eller højde */
+        max-width: 100%;
+        height: auto;
+        width: 70%;
+    }
+
+    .beskrivelse {padding: 10px 25px 0 25px;}
+
+    .ol-billede{ padding: 10px 20px 0 20px;}
 }
 
     
@@ -959,6 +958,10 @@ footer{
 /* Mobil */
 
 @media screen and (max-width: 480px) {
+
+    nav .logo {
+        width: 160px;  
+    }
 
  /* Hendvisninger */
 
@@ -1005,27 +1008,26 @@ footer{
 
     /* Øl sider */
 
-.info{
+    .info{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 395px 265px 360px 470px;
+    grid-template-rows: 325px 275px 360px 505px;
     gap: 4%;
     padding: 80px 50px;
     justify-content: center;
-    justify-items: center;
-}
+    justify-items: center;}
 
-
-.mad img{
-    justify-items: center;
-
-}
 
 /* Øl pakker */
+.overskrift {
+    padding: 0 50px;
+}
+
 .ol-pakker{
     display: grid;
     grid-template-columns: 300px;
-    grid-template-rows: 420px 330px 300px 320px 390px;
+    grid-template-rows: 273px 380px 251px 340px 373px;
+    padding: 0;
 }
 
 .ol-info{
