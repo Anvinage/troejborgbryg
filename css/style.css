@@ -999,7 +999,7 @@ footer{
     }
 
     .om-artikel .om-section {
-        padding: 61px 10%;
+        padding: 11px 10%;
     }
 
     .om-arktiviteter .arktiviteter {
@@ -1008,10 +1008,14 @@ footer{
 
     /* Øl sider */
 
+    .ol h2{
+        font-size: 17px;
+    }
+
     .info{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 325px 275px 360px 505px;
+    grid-template-rows: 342px 290px 400px 505px;
     gap: 4%;
     padding: 80px 50px;
     justify-content: center;
@@ -1026,7 +1030,7 @@ footer{
 .ol-pakker{
     display: grid;
     grid-template-columns: 300px;
-    grid-template-rows: 273px 380px 251px 340px 373px;
+    grid-template-rows: 273px 420px 251px 370px 373px;
     padding: 0;
 }
 
